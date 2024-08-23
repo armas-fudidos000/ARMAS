@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tactical War Spirit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Preto */
+            color: #fff; /* Branco */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #FFD700; /* Amarelo */
+            color: #000; /* Preto */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: #FFD700; /* Amarelo */
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #FFD700; /* Amarelo */
+            color: #000; /* Preto */
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .product {
+            border: 1px solid #FFD700; /* Amarelo */
+            padding: 10px;
+            margin: 10px;
+            background-color: #1c1c1c;
+        }
+
+        footer {
+            background-color: #FFD700; /* Amarelo */
+            color: #000; /* Preto */
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tactical War Spirit</h1>
+        <p>Loja de Artigos Militares de Airsoft</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Produtos</a>
+        <a href="#">Sobre Nós</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <div class="container">
+        <h2>Novidades</h2>
+        <div class="product">
+            <h3>Rifle Airsoft M4A1</h3>
+            <p>R$ 899,00</p>
+        </div>
+        <div class="product">
+            <h3>Pistola Airsoft Glock 17</h3>
+            <p>R$ 499,00</p>
+        </div>
+        <div class="product">
+            <h3>Capacete Tático</h3>
+            <p>R$ 199,00</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tactical War Spirit. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
