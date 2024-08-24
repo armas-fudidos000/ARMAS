@@ -1,149 +1,495 @@
-header {
-    background-color: black;
-}
 body {
+    
     font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
+    background-color: #f5f5f5;
+
+    
+}
+
+/* Resetando margens e padding padrão */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #333; /* Cor de fundo escura */
+    padding: 10px 20px;
+}
+
+/* Estilo do menu de navegação */
+.nav-menu {
+    list-style: none; /* Remove marcadores de lista */
+    display: flex; /* Exibe itens em linha */
+    justify-content: center; /* Centraliza o menu horizontalmente */
     padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
+.nav-menu li {
+    margin: 0 15px; /* Espaçamento horizontal entre itens */
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.nav-menu a {
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado padrão */
+    font-weight: bold; /* Torna o texto negrito */
+    font-size: 16px;
     padding: 10px;
+    transition: color 0.3s, background-color 0.3s; /* Efeito de transição suave */
+    border-radius: 5px; /* Bordas arredondadas */
 }
 
-.logo h1 {
-    margin: 0;
+.nav-menu a:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Mantém a cor do texto */
 }
 
-.search-bar {
+.nav-menu a:active {
+    background-color: #444; /* Cor de fundo ao clicar */
+}
+
+
+.search-container {
     display: flex;
-    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #fff;
 }
 
-.search-bar input {
-    padding: 5px;
-    margin-right: 5px;
-}
-
-.search-bar button {
-    padding: 5px;
-    background-color: #555;
-    color: #fff;
+.search-input {
     border: none;
-    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 16px;
+    width: 200px;
+    outline: none;
 }
 
-.search-bar button:hover {
-    background-color: #777;
-}
-
-.cart button {
-    padding: 5px;
-    background-color: #555;
-    color: #fff;
+.search-button {
     border: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
     cursor: pointer;
+    font-size: 16px;
 }
 
-.cart button:hover {
-    background-color: #777;
+.search-button:hover {
+    background-color: #0056b3;
 }
 
-main {
-    padding: 20px;
-}
+/* Reset básico */
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-/* Reseta o estilo padrão do navegador */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Define o estilo do corpo da página */
 body {
     font-family: Arial, sans-serif;
-    background-color: #000; /* Cor de fundo preta */
-    color: #f1c40f; /* Cor do texto amarelo */
-    padding: 20px;
 }
 
-/* Estilo do contêiner principal */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #222; /* Um tom de preto mais suave para o fundo do conteúdo */
-    padding: 20px;
-    border-radius: 8px;
-}
-
-/* Estilo do cabeçalho */
 header {
-    margin-bottom: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
 }
 
-header h1 {
-    color: #f1c40f; /* Cor do título amarelo */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.contato {
+    text-align: right;
+}
+
+.contato p {
+    margin: 5px 0;
+}
+
+/* Reset de estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
     text-align: center;
 }
 
-/* Estilo do formulário */
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
 form {
     display: flex;
     flex-direction: column;
 }
 
 form label {
-    margin-bottom: 5px;
-    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
 form input, form textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #f1c40f; /* Borda amarela */
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #333; /* Fundo do input em tom de preto mais suave */
-    color: #f1c40f; /* Cor do texto no input em amarelo */
 }
 
 form button {
-    padding: 10px;
+    background: #333;
+    color: #fff;
+    padding: 0.5rem;
     border: none;
     border-radius: 4px;
-    background-color: #f1c40f; /* Fundo do botão amarelo */
-    color: #000; /* Texto do botão preto */
     cursor: pointer;
-    font-size: 16px;
 }
 
 form button:hover {
-    background-color: #e0b90f; /* Cor do botão ao passar o mouse */
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+/* Reset básico para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #f0f0f0;
+    background-color: #000000;
+}
+
+header {
+    background-color: #ffcc00;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #333333;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    background-color: #333333;
+    color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content {
+    background-color: #222222;
+    color: #f0f0f0;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffcc00;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Resetando margens e padding padrão */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 20px;
+}
+/* Resetando margens e padding padrão */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo do container do título */
+.title-container {
+    margin: 0 auto;
+}
+
+/* Estilo do título principal */
+.main-title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilo do subtítulo */
+.sub-title {
+    font-size: 1.5em;
+    color: #666;
+}
+/* Resetando margens e padding padrão */
+body, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Estilo do botão de atendimento */
+.support-button {
+    background-color: #007bff; /* Azul claro */
+    color: #fff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.support-button:hover {
+    background-color: #0056b3; /* Azul escuro ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o botão levemente */
+}
+
+.support-button:focus {
+    outline: none; /* Remove o contorno padrão ao focar */
+}
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Estilo do rodapé */
 footer {
+    background-color: #333; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto */
+    padding: 20px;
     text-align: center;
-    margin-top: 20px;
 }
 
-footer p {
-    color: #f1c40f; /* Cor do texto do rodapé em amarelo */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.contact-info, .social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li, .social-links li {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
 }
